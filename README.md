@@ -1,6 +1,7 @@
 # actions.json-to-env
 
-Converts a JSON string to environment variables
+Converts a JSON string to environment variables.
+And all key will be transform to CONSTANT_CASE by [change-case](https://www.npmjs.com/package/change-case).
 
 ## Inputs
 

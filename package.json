@@ -1,0 +1,25 @@
+{
+  "name": "actions.json-to-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "actions",
+    "json",
+    "env"
+  ],
+  "author": "Val.istar.Guo <val.istar.guo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "change-case": "^5.4.4"
+  },
+  "devDependencies": {
+    "@buka/eslint-config": "^2.1.2",
+    "eslint": "^9.16.0"
+  }
+}

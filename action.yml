@@ -1,0 +1,9 @@
+name: 'Json To Env Variables'
+description: 'Converts a JSON string to environment variables'
+inputs:
+  json:
+    description: 'The JSON string to convert'
+    required: true
+runs:
+  using: 'node20'
+  main: 'index.js'

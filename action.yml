@@ -1,0 +1,17 @@
+name: 'Json To Env Variables'
+description: 'Converts a JSON string to environment variables'
+inputs:
+  json:
+    description: 'The JSON string to convert'
+    required: true
+  prefix:
+    description: 'The prefix to add to the environment variables'
+    required: false
+    default: ''
+  separator:
+    description: 'The separator to use between the prefix and the key'
+    required: false
+    default: '__'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

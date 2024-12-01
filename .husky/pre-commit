@@ -1,0 +1,5 @@
+pnpm build
+
+git add dist
+
+git update-index --again

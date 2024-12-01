@@ -1,0 +1,17 @@
+name: Test
+
+on: push
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./
+        with:
+          json: '{"pkg_a": {"version": "1.1.1"}, "pkgB": {"version": "9.9.9"}}'
+          prefix: "root"
+      - run: |
+          [[ $ROOT__PKG_A__VERSION == "1.1.1" ]] || exit 1
+          [[ $ROOT__PKG_B__VERSION == "9.9.9" ]] || exit 1
